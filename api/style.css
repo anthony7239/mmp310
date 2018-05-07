@@ -1,0 +1,16 @@
+#gifs {
+    width: 800px;
+    margin: 0 auto; 
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+.git {
+    display:inline-block;
+    height: 200px;
+}
+
+.gif img {
+    width: 100%;
+}
