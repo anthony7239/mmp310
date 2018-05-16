@@ -1,37 +1,32 @@
 <!doctype html>
 <html>
 <head>
-	<title>My Website</title>
-	<link rel="stylesheet" href="style.css" type="text/css" />
+	<title>Final</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
 	<meta charset="utf-8" />
 </head>
 <body>
-    <!-- The parent component -->
-    <div class="curtain">
-
-      <!-- The component wrapper -->
-      <div class="curtain__wrapper">
-
-        <!-- The checkbox hack! -->
-        <input type="checkbox" checked>
-
-        <!-- The left curtain panel -->
-        <div class="curtain__panel curtain__panel--left">
-            <h1>Click to</h1>
-        </div> <!-- curtain__panel -->
-
-        <!-- The prize behind the curtain panels -->
-        <div class="curtain__prize">
-            <button type="button">Click Me!</button>
-        </div> <!-- curtain__prize -->
-
-        <!-- The right curtain panel -->
-        <div class="curtain__panel curtain__panel--right">
-            <h1>open curtains</h1>
-        </div> <!-- curtain__panel -->
-
-      </div> <!-- curtain__wrapper -->
-
-    </div> <!-- curtain -->
+    
+<!--    <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/UUxD4-dEzn0?version=3&enablejsapi=1&controls=0&showinfo=0&modestbranding=1&rel=0&autohide=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+    
+    <div id="player"></div>
+	
+	<div id="menu">
+		<button id="play">Play</button>
+        <button id="pause">Pause</button>
+		<button id="stop">Stop</button>
+	</div>
+    
+    <div id="genres">
+		<button class="genre" data-list="" id="Adventure">Adventure</button>
+		<button class="genre" data-list="PL9ZwPsXkrDCNyzjGK1EM2LaF2zHP8DUA9" id="Drama">Drama</button>
+        <button class="genre" data-list="" id="Horror">Horror</button>
+		<button class="genre" data-list="" id="Musical">Musical</button>
+        <button class="genre" data-list="" id="SciFi">Sci-Fi</button>
+		<button class="genre" data-list="" id="Western">Western</button>
+	</div>
+    
+	<script src="app.js"></script>
+    
 </body>
 </html>

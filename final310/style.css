@@ -10,7 +10,8 @@
 }
       
 .curtain__panel {
-  background-image: url("curtain.jpg");
+  background-color: darkred;
+  /* background-image: url("curtain.jpg");*/
   width: 50%; /* Each panel takes up half the container */
   height: 100vh; /* Used for demo purposes */
   float: left; /* Makes sure panels are side-by-side */
