@@ -29,7 +29,7 @@
   /* Styles for sliding the right panel */
 }
   
-.curtain__prize {
+.curtain__player {
   background: #333;
   position: absolute; /* Forces the prize position into the container start */
   z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
