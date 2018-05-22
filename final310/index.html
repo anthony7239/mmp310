@@ -4,29 +4,39 @@
 	<title>Final</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
 	<meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
-    
-<!--    <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/UUxD4-dEzn0?version=3&enablejsapi=1&controls=0&showinfo=0&modestbranding=1&rel=0&autohide=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-    
     <div id="player"></div>
 	
-	<div id="menu">
+	<!-- <div id="menu">
 		<button id="play">Play</button>
         <button id="pause">Pause</button>
 		<button id="stop">Stop</button>
+	</div> -->
+    
+    <div id="options">
+		<button class="option" id="director">DIRECTORS</button>
+		<button class="option" id="genre">GENRES</button>
+	</div>
+    
+    <div id="directors">
+		<button class="director" data-list="PL9ZwPsXkrDCNRYz17w4OK1Wdvj3hw6LCG" id="scorsese">MARTIN SCORSESE</button>
+		<button class="director" data-list="PL9ZwPsXkrDCNew4LjgLiy3oiZnX0qPvAI" id="tarantino">QUENTIN TARANTINO</button>
+        <button class="director" data-list="PL9ZwPsXkrDCOkaHiePLr2BHU3mxi8b-vZ" id="coppola">FRANCIS FORD COPPOLA</button>
+		<button class="director" data-list="PL9ZwPsXkrDCM0b4H6IyHeehtAKY0717ix" id="spielberg">STEVEN SPIELBERG</button>
+        <button class="director" data-list="PL9ZwPsXkrDCPweV0wci87JGJ3NzN3W625" id="kubrick">STANLEY KUBRICK</button>
+		<button class="director" data-list="PL9ZwPsXkrDCPRbHAB5V17CsF793ZKUdkm" id="nolan">CHRISTOPHER NOLAN</button>
 	</div>
     
     <div id="genres">
-		<button class="genre" data-list="" id="Action & Adventure">Adventure</button>
-		<button class="genre" data-list="PL9ZwPsXkrDCNyzjGK1EM2LaF2zHP8DUA9" id="Drama">Drama</button>
-        <button class="genre" data-list="PL9ZwPsXkrDCMa-Sx6qEJRzqiQqBFgrXo2" id="Horror">Horror</button>
-		<button class="genre" data-list="" id="Musical">Musical</button>
-        <button class="genre" data-list="" id="SciFi">Sci-Fi</button>
-		<button class="genre" data-list="" id="Western">Western</button>
+		<button class="genre" data-list="PL9ZwPsXkrDCPdW1dOJLPTN5B60AsxRbMB" id="Action & Adventure">ADVENTURE</button>
+		<button class="genre" data-list="PL9ZwPsXkrDCNyzjGK1EM2LaF2zHP8DUA9" id="Drama">DRAMA</button>
+        <button class="genre" data-list="PL9ZwPsXkrDCMa-Sx6qEJRzqiQqBFgrXo2" id="Horror">HORROR</button>
+		<button class="genre" data-list="PL9ZwPsXkrDCPmz1g2z8vF8mmvFvvKv1a-" id="Musical">MUSICAL</button>
+        <button class="genre" data-list="PL9ZwPsXkrDCMDnKUrxu2BHjC38xr-oe_p" id="SciFi">SCI-FI</button>
+		<button class="genre" data-list="PL9ZwPsXkrDCOvin4S1DsEABjkxwRd2-SI" id="Western">WESTERN</button>
 	</div>
-    
 	<script src="app.js"></script>
-    
 </body>
 </html>

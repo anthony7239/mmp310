@@ -1,69 +1,32 @@
-.curtain {
-  width: 100%; /* Ensures the component is the full screen width */
-  height: 100vh; /* We're using this for demo purposes */
-  overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
-}
-  
-.curtain__wrapper {
-  width: 100%;
-  height: 100%;
-}
-      
-.curtain__panel {
-  background-color: darkred;
-  /* background-image: url("curtain.jpg");*/
-  width: 50%; /* Each panel takes up half the container */
-  height: 100vh; /* Used for demo purposes */
-  float: left; /* Makes sure panels are side-by-side */
-  position: relative; /* Needed to define the z-index */
-  z-index: 2; /* Places the panels in front of the prize */
-  transition: all 1s ease-out; /* Animates the sliding transition */
-  color: white;
+body {
+    background-color: #303030;
+    background-image: url("curtain.jpg"), url("curtain.jpg");
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-size: 15% 2000px;
 }
 
-.curtain__panel--left {
-  /* Styles for sliding the left panel */
+#player {
+    padding-top: 50px;
+    display: block;
+    margin: 0 auto;
 }
 
-.curtain__panel--right {
-  /* Styles for sliding the right panel */
-}
-  
-.curtain__player {
-  background: #333;
-  position: absolute; /* Forces the prize position into the container start */
-  z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
-  width: 100%;
-  height: 100%;
+#menu, #options, #directors, #genres {
+    text-align: center;
 }
 
-input[type=checkbox] {
-  position: absolute; /* Force the checkbox at the start of the container */
-  cursor: pointer; /* Indicate the curtain is clickable */
-  width: 100%; /* The checkbox is as wide as the component */
-  height: 100%; /* The checkbox is as tall as the component */
-  z-index: 100; /* Make sure the checkbox is on top of everything else */
-  opacity: 0; /* Hide the checkbox */
+#directors, #genres {
+    display: none;
 }
 
-/* When the checkbox is checked... */
-        
-/* Slide the first panel in */
-input[type=checkbox]:checked ~ div.curtain__panel--left {
-  transform: translateX(0);
-}
-        
-/* Slide the second panel in */
-input[type=checkbox]:checked ~ div.curtain__panel--right {
-  transform: translateX(0);
-}
-
-/* Slide the panel to the left out of the container */
-.curtain__panel--left {
-  transform: translateX(-85%);
-}
-
-/* Slide the panel to the right out of the container */
-.curtain__panel--right {
-  transform: translateX(85%);
+button {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: white;
+    border-color: gold;
+    border-width: 4px;
+    border-radius: 8px;
 }
